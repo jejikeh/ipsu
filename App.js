@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     fontFamily: "Roboto",
     paddingTop: 20,
     paddingLeft: 5,
-    fontFamily : "Inter",
+    fontFamily : "Inter_900Black",
 
     fontStyle : "normal",
     fontWeight : "normal",
