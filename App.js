@@ -10,7 +10,8 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Image source = {anime} style = {{ width: 300, height : 160}} />
-
+      
+      {/*  прикол в том что в браузере пикча есть, а на телефоне нет :( */}
       <View style = {styles.contentWrapper}>
       <Text style = {styles.textHeader}>Добро пожаловать</Text>
       
