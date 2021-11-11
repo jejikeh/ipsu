@@ -17,12 +17,14 @@ export default function App() {
         где раскрывают способности
       </Text>
       <View styles = {styles.inputbox}>
-
+       
+         </View>
       <TextArea/>
-
+      
       </View>
       </View>
-    </View>
+    
+    
   );
 }
 
@@ -34,6 +36,7 @@ const styles = StyleSheet.create({
     alignContent : "center",
     alignSelf: "center",
     backgroundColor: '#FFF',
+    
   },
   contentWrapper : { 
     alignContent : "center",
