@@ -87,12 +87,6 @@ const styles = StyleSheet.create({
     letterSpacing: 0.38,
     color : "#282828"
   },
-});
-
-const styles = StyleSheet.create({
-  container: {
-    paddingTop: 50,
-  },
   tinyLogo: {
     width: 50,
     height: 50,
@@ -100,12 +94,6 @@ const styles = StyleSheet.create({
   logo: {
     width: 66,
     height: 58,
-  },
-});
-
-const styles = StyleSheet.create({
-  container: {
-    paddingTop: 50,
   },
   stretch: {
     width: 50,
