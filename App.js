@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     fontFamily: "Roboto",
     paddingTop: 20,
     paddingLeft: 5,
-    fontFamily : "Inter",
+    fontFamily : Inter_900Black,
 
     fontStyle : "normal",
     fontWeight : "normal",
@@ -84,12 +84,6 @@ const styles = StyleSheet.create({
     letterSpacing: 0.38,
     color : "#282828"
   },
-});
-
-const styles = StyleSheet.create({
-  container: {
-    paddingTop: 50,
-  },
   tinyLogo: {
     width: 50,
     height: 50,
@@ -97,7 +91,7 @@ const styles = StyleSheet.create({
   logo: {
     width: 66,
     height: 58,
-  },
+  }
 });
 
 const DisplayAnImage = () => {
