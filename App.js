@@ -59,6 +59,8 @@ const styles = StyleSheet.create({
     lineHeight : 22,
     paddingLeft: 10,
     letterSpacing: -0.41,
+    fontFamily : Inter_900Black,
+
     color : "#232740"
   },
   textHeader : {
@@ -68,7 +70,7 @@ const styles = StyleSheet.create({
     fontSize : 34,
     lineHeight : 41,
     color : "#282828",
-    fontFamily : "Inter",
+    fontFamily : Inter_900Black,
     paddingLeft:20
   },
   bottomText : {
