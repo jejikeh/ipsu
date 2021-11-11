@@ -9,7 +9,7 @@ import { useFonts, Inter_900Black } from '@expo-google-fonts/inter';
 export default function App() {
   return (
     <View style={styles.container}>
-          <Image source = {anime} style = {{ width: 300, height : 160}} />
+      <Image source = {anime} style = {{ width: 300, height : 160}} />
 
       <View style = {styles.contentWrapper}>
       <Text style = {styles.textHeader}>Добро пожаловать</Text>
