@@ -1,13 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 import TextArea from './components/TextArea/TextArea.component';
+import anime from "./assets/anime.jpg"
 import { useFonts, Inter_900Black } from '@expo-google-fonts/inter';
 
 
 export default function App() {
   return (
     <View style={styles.container}>
+          <Image source = {anime} style = {{ width: 300, height : 160}} />
 
       <View style = {styles.contentWrapper}>
       <Text style = {styles.textHeader}>Добро пожаловать</Text>
@@ -19,7 +21,7 @@ export default function App() {
         где раскрывают способности
       </Text>
       <View styles = {styles.inputbox}>
-       
+          <Image source = {anime} />
          </View>
       <TextArea/>
       
@@ -102,12 +104,4 @@ const styles = StyleSheet.create({
   },
 });
 
-const DisplayAnImageWithStyle = () => {
-  return (
-    <View style={styles.container}>
-      <Image style={styles.stretch} source={require('@expo/assets/anime.jpg')} />
-    </View>
-  );
-};
 
-export default DisplayAnImageWithStyle;
