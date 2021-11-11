@@ -68,6 +68,7 @@ const styles = StyleSheet.create({
     fontSize : 34,
     lineHeight : 41,
     color : "#282828",
+    fontFamily : "Inter",
     paddingLeft:20
   },
   bottomText : {
