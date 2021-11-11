@@ -43,7 +43,9 @@ const styles = StyleSheet.create({
   contentWrapper : { 
     alignContent : "center",
     justifyContent : "center",
-    alignSelf : "center"
+    alignSelf : "center",
+    fontFamily : Inter_900Black
+
   },
   inputbox : {
     alignItems: "center",
@@ -53,6 +55,7 @@ const styles = StyleSheet.create({
   lightbottomText: {
     fontFamily: "Roboto",
     paddingTop: 20,
+    fontFamily : Inter_900Black,
     fontStyle : "normal",
     fontWeight : "500",
     fontSize : 17,
@@ -68,14 +71,14 @@ const styles = StyleSheet.create({
     fontSize : 34,
     lineHeight : 41,
     color : "#282828",
-    fontFamily : "Inter",
+    fontFamily : Inter_900Black,
     paddingLeft:20
   },
   bottomText : {
     fontFamily: "Roboto",
     paddingTop: 20,
     paddingLeft: 5,
-    fontFamily : "Inter_900Black",
+    fontFamily : Inter_900Black,
 
     fontStyle : "normal",
     fontWeight : "normal",
