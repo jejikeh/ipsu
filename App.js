@@ -88,3 +88,38 @@ const styles = StyleSheet.create({
     color : "#282828"
   },
 });
+
+const styles = StyleSheet.create({
+  container: {
+    paddingTop: 50,
+  },
+  tinyLogo: {
+    width: 50,
+    height: 50,
+  },
+  logo: {
+    width: 66,
+    height: 58,
+  },
+});
+
+const styles = StyleSheet.create({
+  container: {
+    paddingTop: 50,
+  },
+  stretch: {
+    width: 50,
+    height: 200,
+    resizeMode: 'stretch',
+  },
+});
+
+const DisplayAnImageWithStyle = () => {
+  return (
+    <View style={styles.container}>
+      <Image style={styles.stretch} source={require('@expo/assets/anime.jpg')} />
+    </View>
+  );
+};
+
+export default DisplayAnImageWithStyle;
