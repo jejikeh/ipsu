@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import TextArea from './components/TextArea/TextArea.component';
-import anime from "./assets/anime.jpg"
+import anime from "./assets/anime.jpg";
 import { useFonts, Inter_900Black } from '@expo-google-fonts/inter';
 
 
@@ -13,6 +13,7 @@ export default function App() {
 
       <View style = {styles.contentWrapper}>
       <Text style = {styles.textHeader}>Добро пожаловать</Text>
+      
       <Text style = {styles.lightbottomText}>
         Шарага в рб
       </Text>
