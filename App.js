@@ -2,6 +2,8 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import TextArea from './components/TextArea/TextArea.component';
+import { useFonts, Inter_900Black } from '@expo-google-fonts/inter';
+
 
 export default function App() {
   return (
@@ -69,6 +71,7 @@ const styles = StyleSheet.create({
     fontFamily: "Roboto",
     paddingTop: 20,
     paddingLeft: 5,
+    fontFamily : "Inter",
 
     fontStyle : "normal",
     fontWeight : "normal",
