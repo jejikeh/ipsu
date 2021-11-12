@@ -2,15 +2,23 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import TextArea from './components/TextArea/TextArea.component';
+import Error from './components/error/error.component';
 import anime from "./assets/anime.jpg";
-import { useFonts, Inter_900Black } from '@expo-google-fonts/inter';
+import { useFonts } from 'expo-font';
+
 
 
 export default function App() {
+  let [fontsLoaded] = useFonts({
+    'QanelasBlack' : require("./assets/fonts/QanelasBlack.otf"),
+  });
+
+  if (!fontsLoaded) {
+    return <Error/>;
+  } else {
   return (
     <View style={styles.container}>
       <Image source = {anime} style = {{ width: 300, height : 160}} />
-      
       {/*  прикол в том что в браузере пикча есть, а на телефоне нет :( */}
       <View style = {styles.contentWrapper}>
       <Text style = {styles.textHeader}>Добро пожаловать</Text>
@@ -32,6 +40,7 @@ export default function App() {
     
     
   );
+      }
 }
 
 const styles = StyleSheet.create({
@@ -48,7 +57,7 @@ const styles = StyleSheet.create({
     alignContent : "center",
     justifyContent : "center",
     alignSelf : "center",
-    fontFamily : Inter_900Black
+    fontFamily : ""
 
   },
   inputbox : {
@@ -57,9 +66,8 @@ const styles = StyleSheet.create({
     alignContent : "center",
   },
   lightbottomText: {
-    fontFamily: "Roboto",
+    fontFamily: 'QanelasBlack',
     paddingTop: 20,
-    fontFamily : Inter_900Black,
     fontStyle : "normal",
     fontWeight : "500",
     fontSize : 17,
@@ -69,20 +77,18 @@ const styles = StyleSheet.create({
     color : "#232740"
   },
   textHeader : {
-    fontFamily: "Roboto",
+    fontFamily: 'QanelasBlack',
     fontStyle : "normal",
     fontWeight : "bold",
     fontSize : 34,
     lineHeight : 41,
     color : "#282828",
-    fontFamily : Inter_900Black,
     paddingLeft:20
   },
   bottomText : {
-    fontFamily: "Roboto",
+    fontFamily: 'QanelasBlack',
     paddingTop: 20,
     paddingLeft: 5,
-    fontFamily : Inter_900Black,
 
     fontStyle : "normal",
     fontWeight : "normal",
