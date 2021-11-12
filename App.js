@@ -3,7 +3,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import TextArea from './components/TextArea/TextArea.component';
 import Error from './components/error/error.component';
-import anime from "./assets/anime.jpg";
+import test from "./assets/2.webp";
 import { useFonts } from 'expo-font';
 
 
@@ -18,25 +18,33 @@ export default function App() {
   } else {
   return (
     <View style={styles.container}>
-      <Image source = {anime} style = {{ width: 300, height : 160}} />
+      
+
+      <Image source = {test} style = {{ position: "absolute",
+                                        width: 375,
+                                        height: 490,
+                                        left: 0,
+                                        top: 0}} />
       {/*  прикол в том что в браузере пикча есть, а на телефоне нет :( */}
-      <View style = {styles.contentWrapper}>
-      <Text style = {styles.textHeader}>Добро пожаловать</Text>
-      
-      <Text style = {styles.lightbottomText}>
-        Шарага в рб
-      </Text>
-      <Text style = {styles.bottomText}>
-        Пес, добро пожаловать. Место
-        где раскрывают способности
-      </Text>
-      <View styles = {styles.inputbox}>
-          <Image source = {anime} />
-         </View>
-      <TextArea/>
-      
+        <View style = {{ position : "absolute",width : 375,padding : 100, height : 322, borderRadius: 50,left : 0,
+                            backgroundColor : "white", transform: [{scaleX : 1}] }}>
+                              <Text style = {{ fontFamily : 'QanelasBlack', fontSize : 24, lineHeight : 41,
+                            fontStyle : "normal", fontWeight : "bold", textAlign : "center", textTransform : "uppercase"}}>Добро пожаловать</Text>
+                            
+                            <View  style = {{ position: "absolute",
+                          width: 423,
+                          height: 322,
+                          left: -26,
+                          top: 490,
+
+                          background: "#FFFFFF"}}>
+                          
+                            
+        </View>
+
+                            </View>
       </View>
-      </View>
+      
     
     
   );
@@ -52,63 +60,6 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     backgroundColor: '#FFF',
     
-  },
-  contentWrapper : { 
-    alignContent : "center",
-    justifyContent : "center",
-    alignSelf : "center",
-    fontFamily : ""
-
-  },
-  inputbox : {
-    alignItems: "center",
-    justifyContent : "center",
-    alignContent : "center",
-  },
-  lightbottomText: {
-    fontFamily: 'QanelasBlack',
-    paddingTop: 20,
-    fontStyle : "normal",
-    fontWeight : "500",
-    fontSize : 17,
-    lineHeight : 22,
-    paddingLeft: 10,
-    letterSpacing: -0.41,
-    color : "#232740"
-  },
-  textHeader : {
-    fontFamily: 'QanelasBlack',
-    fontStyle : "normal",
-    fontWeight : "bold",
-    fontSize : 34,
-    lineHeight : 41,
-    color : "#282828",
-    paddingLeft:20
-  },
-  bottomText : {
-    fontFamily: 'QanelasBlack',
-    paddingTop: 20,
-    paddingLeft: 5,
-
-    fontStyle : "normal",
-    fontWeight : "normal",
-    fontSize : 20,
-    lineHeight : 25,
-    letterSpacing: 0.38,
-    color : "#282828"
-  },
-  tinyLogo: {
-    width: 50,
-    height: 50,
-  },
-  logo: {
-    width: 66,
-    height: 58,
-  },
-  stretch: {
-    width: 50,
-    height: 200,
-    resizeMode: 'stretch',
   },
 });
 
